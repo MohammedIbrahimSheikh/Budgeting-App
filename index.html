@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>budget App</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="coll-11 mx-auto pt-3">
+            <h3 class="text-uppercase mb-4">budget app</h3>
+            <div class="row">
+                <div class="col-md-5 my-3">
+                    <!--Budget Form-->
+                    <form id="budget-form" class="budget-form">
+                        <h5 class="text-capitalize">enter your budget here:</h5>
+                        <div class="form-group">
+                            <input type="number" class="form-control budget-input" id="budget-input" required />
+                        </div>
+                        <button  type="submit" class="btn text-capitalize budget-submit mt-2 mb-2" id="budget-submit">set budget</button>
+                    </form>
+                </div>
+                <div class="col-md-7">
+                    <div class="row my-3">
+                        <div class="col-4 text-center mb-2">
+                            <h6 class="text-uppercase info-title">budget</h6>
+                            <span class="budget-icon"><i class="fa-solid fa-money-bill-1"></i></span>
+                            <h4 class="text-uppercase mt-2 budget" id="budget"><span>$</span><span id="budget-amount">0</span></h4>
+                        </div>
+                        <div class="col-4 text-center">
+                            <h6 class="text-uppercase info-title">expenses</h6>
+                            <span class="expense-icon"><i class="fa-sharp fa-solid fa-credit-card"></i> </span>
+                            <h4 class="text-uppercase mt-2 expense" id="expense"><span>$</span><span id="expense-amount">0</span></h4>
+                        </div>
+                        <div class="col-4 text-center">
+                            <h6 class="text-uppercase info-title">balance</h6>
+                            <span class="balance-icon"><i class="fa-solid fa-dollar-sign"></i></span>
+                            <h4 class="text-uppercase mt-2 balance" id="balance"><span>$</span><span id="balance-amount">0</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5 my-3">
+                <!--Expense form-->
+                <form id="expense-form" class="expense-form">
+
+                    <h5 class="text-capitalize">please enter date here:</h5>
+                    <div class="form-group">
+                        <input type="date" class="form-control expense-input" id="date-input" required />
+                    </div>
+                    <h5 class="text-capitalize">enter your expense here:</h5>
+                    <div class="form-group">
+                        <input type="text" class="form-control expense-input" id="expense-input" required/>
+                    </div>
+                    <h5 class="text-capitalize">enter expense amount:</h5>
+                    <div class="form-group">
+                        <input type="number" class="form-control expense-input" id="amount-input" required />
+                    </div>
+                    <!--submit button-->
+                    <button  type="submit" class="btn text-capitalize expense-submit mt-2 mb-2" id="expense-submit">add expense</button>
+                </form>
+            </div>
+            <div class="col-md-7 my-3">
+                <div class="table-responsive text-capitalize ">
+                    <table class="table table-borderless">
+                        <thead>
+                            <th>expense title</th>
+                            <th>expense value</th>
+                            <th>purchase date</th>
+                            <th>edit / delete</th>
+                        </thead>
+                        <tbody id="expense-table"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

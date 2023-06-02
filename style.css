@@ -1,0 +1,42 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+body{
+    background-color: #858585;
+    color: snow;
+}
+div.row > div.col-md-5{
+    border: 2px solid #5d4864;
+}
+div.col-4 > h4{
+    color:  #5d4864;
+}
+div.col-4>h4.expense{
+    color: darkred;
+}
+
+div.col-4 i{
+    color: black;
+    font-size: 2em;
+}
+
+
+.btn{
+    background-color: #2e253663;
+    color: inherit;
+}
+td{
+    font-size: 1.2rem;
+    color: darkred;
+    font-weight: 600;
+}
