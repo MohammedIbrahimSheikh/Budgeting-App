@@ -35,6 +35,9 @@ div.col-4 i{
     background-color: #2e253663;
     color: inherit;
 }
+caption{
+    color: black;
+}
 td{
     font-size: 1.2rem;
     color: darkred;
