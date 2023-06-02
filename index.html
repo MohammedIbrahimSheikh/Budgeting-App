@@ -47,38 +47,40 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-5 my-3">
-                <!--Expense form-->
-                <form id="expense-form" class="expense-form">
-
-                    <h5 class="text-capitalize">please enter date here:</h5>
-                    <div class="form-group">
-                        <input type="date" class="form-control expense-input" id="date-input" required />
+        <div class="coll-11 mx-auto pt3">
+            <div class="row">
+                <div class="col-md-5 my-3">
+                    <!--Expense form-->
+                    <form id="expense-form" class="expense-form">
+    
+                        <h5 class="text-capitalize">please enter date here:</h5>
+                        <div class="form-group">
+                            <input type="date" class="form-control expense-input" id="date-input" required />
+                        </div>
+                        <h5 class="text-capitalize">enter your expense here:</h5>
+                        <div class="form-group">
+                            <input type="text" class="form-control expense-input" id="expense-input" required/>
+                        </div>
+                        <h5 class="text-capitalize">enter expense amount:</h5>
+                        <div class="form-group">
+                            <input type="number" class="form-control expense-input" id="amount-input" required />
+                        </div>
+                        <!--submit button-->
+                        <button  type="submit" class="btn text-capitalize expense-submit mt-2 mb-2" id="expense-submit">add expense</button>
+                    </form>
+                </div>
+                <div class="col-md-7 my-3">
+                    <div class="table-responsive text-capitalize ">
+                        <table class="table table-borderless">
+                            <thead>
+                                <th>expense title</th>
+                                <th>expense value</th>
+                                <th>purchase date</th>
+                                <th>edit / delete</th>
+                            </thead>
+                            <tbody id="expense-table"></tbody>
+                        </table>
                     </div>
-                    <h5 class="text-capitalize">enter your expense here:</h5>
-                    <div class="form-group">
-                        <input type="text" class="form-control expense-input" id="expense-input" required/>
-                    </div>
-                    <h5 class="text-capitalize">enter expense amount:</h5>
-                    <div class="form-group">
-                        <input type="number" class="form-control expense-input" id="amount-input" required />
-                    </div>
-                    <!--submit button-->
-                    <button  type="submit" class="btn text-capitalize expense-submit mt-2 mb-2" id="expense-submit">add expense</button>
-                </form>
-            </div>
-            <div class="col-md-7 my-3">
-                <div class="table-responsive text-capitalize ">
-                    <table class="table table-borderless">
-                        <thead>
-                            <th>expense title</th>
-                            <th>expense value</th>
-                            <th>purchase date</th>
-                            <th>edit / delete</th>
-                        </thead>
-                        <tbody id="expense-table"></tbody>
-                    </table>
                 </div>
             </div>
         </div>
